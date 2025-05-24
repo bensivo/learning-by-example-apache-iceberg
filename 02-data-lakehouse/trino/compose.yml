@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+
+  trino:
+    image: trinodb/trino
+    container_name: trino
+    ports:
+      - 8080:8080
+    networks:
+      - lbe-iceberg
+    volumes:
+      - ./config.properties:/etc/trino/config.properties
+      - ./jvm.config:/etc/trino/jvm.config
+      - ./iceberg.properties:/etc/trino/catalog/iceberg.properties
+  
+
+networks:
+  lbe-iceberg:
+    external: true
