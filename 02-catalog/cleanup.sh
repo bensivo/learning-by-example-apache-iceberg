@@ -12,4 +12,5 @@ else
     exit 1
 fi
 
-$CONTAINER_CMD compose up -d
+
+$CONTAINER_CMD compose down

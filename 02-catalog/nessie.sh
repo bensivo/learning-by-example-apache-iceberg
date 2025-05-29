@@ -13,3 +13,5 @@ else
 fi
 
 $CONTAINER_CMD compose up -d
+
+open http://localhost:19120 

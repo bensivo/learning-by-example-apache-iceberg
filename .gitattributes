@@ -6,3 +6,14 @@
 02-data-lakehouse/images/nessie-iceberg-table.png filter=lfs diff=lfs merge=lfs -text
 02-data-lakehouse/images/nessie.png filter=lfs diff=lfs merge=lfs -text
 02-data-lakehouse/images/trino.png filter=lfs diff=lfs merge=lfs -text
+01-object-storage/images/jsonl.png filter=lfs diff=lfs merge=lfs -text
+01-object-storage/images/minio-buckets.png filter=lfs diff=lfs merge=lfs -text
+01-object-storage/images/minio-data.png filter=lfs diff=lfs merge=lfs -text
+01-object-storage/images/minio-login.png filter=lfs diff=lfs merge=lfs -text
+02-catalog/images/minio-iceberg-table.png filter=lfs diff=lfs merge=lfs -text
+03-query-engine/images/minio-iceberg-table.png filter=lfs diff=lfs merge=lfs -text
+03-query-engine/images/nessie.png filter=lfs diff=lfs merge=lfs -text
+02-catalog/images/nessie-table.png filter=lfs diff=lfs merge=lfs -text
+02-catalog/images/nessie.png filter=lfs diff=lfs merge=lfs -text
+03-query-engine/images/nessie-iceberg-table.png filter=lfs diff=lfs merge=lfs -text
+03-query-engine/images/trino.png filter=lfs diff=lfs merge=lfs -text

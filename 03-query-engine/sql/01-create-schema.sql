@@ -1,0 +1,1 @@
+CREATE SCHEMA IF NOT EXISTS staging WITH ( LOCATION = 's3://iceberg/staging' )
