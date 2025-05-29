@@ -17,3 +17,6 @@
 02-catalog/images/nessie.png filter=lfs diff=lfs merge=lfs -text
 03-query-engine/images/nessie-iceberg-table.png filter=lfs diff=lfs merge=lfs -text
 03-query-engine/images/trino.png filter=lfs diff=lfs merge=lfs -text
+04-apache-spark/images/spark-ui.png filter=lfs diff=lfs merge=lfs -text
+04-apache-spark/images/spark-output.png filter=lfs diff=lfs merge=lfs -text
+04-apache-spark/images/spark-ui-completed.png filter=lfs diff=lfs merge=lfs -text
