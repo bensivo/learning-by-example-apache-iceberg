@@ -1,4 +1,5 @@
 from pyspark.sql import SparkSession
+from pyspark.sql.functions import input_file_name,current_timestamp 
 
 builder = SparkSession.builder
 
@@ -33,8 +34,15 @@ df = spark.read \
         .option("recursiveFileLookup", "true") \
         .json("s3a://raw/page_load/v1/")
 
+df =  df.withColumn("loaded_at", current_timestamp())
+df =  df.withColumn("loaded_from", input_file_name())
+
 df.printSchema()
 df.show()
 
 
-df.write.format('iceberg').mode('overwrite').saveAsTable("staging.page_load_v1")
+df.write \
+.format('iceberg') \
+.mode('overwrite') \
+.partitionBy('loaded_from') \
+.saveAsTable("staging.page_load_v1")

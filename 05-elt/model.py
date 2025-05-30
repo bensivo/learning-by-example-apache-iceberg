@@ -38,6 +38,8 @@ spark.sql(f"""
         user_name STRING,
         browser STRING
     )
+    USING ICEBERG
+    PARTITIONED BY (event_ts);
 """)
 
 # Convert rows from the staging table into the model schema
